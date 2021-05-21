@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: .5px rgb(180, 231, 229) solid;  */
+}
+.Container-of-AboutPython{
+    width: 970px;
+    background-color: rgb(52, 87, 163);
+    /* margin: 10px; */
+}
+.Header{
+    height: 100px;
+    margin: 15px;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.TextSize {
+    text-align: center; 
+}
+.TextSize a{
+    color: rgb(207, 209, 64);
+}
+
+.SearchBar{
+    width: 275px;
+    height: 50px;
+    background-color:  rgb(64, 65, 68);
+    border-radius: 8px;
+    margin: 2px;
+    box-shadow: 2px 2px 2px black;
+    display: flex; 
+    /* align-items:center;   */
+    justify-content: center; 
+    
+}
+textarea{
+    width: 175px;  
+    height: 25px; 
+    margin-top: 10px;
+    text-align: center; 
+    padding-top: 3px;
+    box-shadow: 1px 1px 1px black;
+    /* display: inline-block;   */
+    /* border: 1px solid beige; */ 
+}
+.GObutton{
+    background-color:  rgb(52, 87, 163);
+    border-radius: 5px;
+    color: white;
+    padding: 5px; 
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgb(243, 236, 236);
+}
+.Header img{
+    width: 350px;
+}
+.NavBAR{
+    width: 850px;
+    height: 40px; 
+    background-color:rgb(51, 141, 214) ;
+    border-radius: 3px;
+    margin-left:80px ;
+    font-size: 20px;
+    font-family: sans-serif;
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: space-around; 
+    box-shadow: 2px 2px 2px black;
+}
+.NavBAR a{
+    color: white;
+    text-decoration: none;
+    /* padding: 20px; */
+}
+#MiddleContent{
+    display: flex;
+    align-items: center; 
+}
+.side-NavBAR{
+    width: 150px;
+    height: 175px;
+    margin-left: 75px; 
+    font-family: sans-serif;
+    text-align: center;
+    list-style: none;
+}
+.side-NavBAR a{
+    color: white;
+    font-size: 15px; 
+    font-weight: 500;
+}
+.side-NavBAR span{
+    color: rgb(228, 213, 84);
+    font-size: 6px;
+    vertical-align: middle;
+}
+.Main-Content-Upper{
+    width: 595px;
+    text-align: center;
+    margin: 20px; 
+    /* vertical-align: top; */
+
+}
+.Main-Content-Upper p{
+    color: lavender;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.Main-Content-Upper h3{
+    color:rgb(228, 213, 84);
+    font-style: italic;
+    font-weight: lighter; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+}
+.Main-Content-Upper h4{
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 2px;  
+}
+#Main-Content-Bottom{
+    display: flex; 
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 30px; 
+    border-top: 3px solid rgb(2, 26, 77);
+}
+#Main-Content-Bottom div{
+    width: 400px;
+    text-align: center; 
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#Main-Content-Bottom h4{
+    margin-bottom: 5px; 
+}
+#Main-Content-Bottom p{
+    font-size: 15px;
+    margin-bottom:5px; 
+}
+#Main-Content-Bottom span{
+    color: cornflowerblue;
+}
+#Main-Content-Bottom ul{
+    margin-left: 50px; 
+    /* width: 400px;  */
+
+}
+#Main-Content-Bottom li a{
+    margin-left: -70px;
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+#footer{
+    text-align: center;
+    background: linear-gradient(rgb(43, 85, 119), rgb(37, 90, 134));
+    padding-top: 10px;
+    color: cornflowerblue;
+}
+#footer ul{
+    list-style: none;
+    margin: 10px;
+}
+#footer li{
+    display: inline-block;
+    margin: 10px;
+}
+#footer a{
+    color: cornflowerblue;
+}
+#footer p{
+    font-size: 10px;
+    height: 25px;
+}

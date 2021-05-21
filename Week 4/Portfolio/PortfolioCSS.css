@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px pink solid;  */
+}
+#Container-of-Portfolio{
+    width: 970px;
+    background-color: rgb(107, 87, 103); 
+    margin: auto; 
+    font-family: sans-serif;
+}
+#header-of-Portfolio{
+    background: rgb(247, 244, 244);
+    padding: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-of-Portfolio h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main-content-of-Portfolio{
+    padding: 20px;
+}
+#About{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about-me-section{
+    width: 490px;
+    height: 275px;
+    margin-left: 15px; 
+    background: linear-gradient(to bottom right, rgb(243, 241, 242), rgb(228, 188, 228));
+}
+
+#ImageJayneDoe{
+    width: 410px;
+    border: 4px rgb(241, 235, 235) solid;
+}
+#about-me-section h2{
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    background: linear-gradient(rgb(238, 235, 235), rgba(211, 195, 195, 0.952), grey);
+}
+#about-me-section p a{
+    background-color: white;
+    text-align: justify;
+}
+a{
+    color: black; 
+}
+#Projects{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.Project {
+    width: 290px;
+    height: 600px;
+    background: linear-gradient(to bottom right, rgb(243, 241, 242), rgb(228, 188, 228));
+    /* vertical-align: top; */
+}
+.Project h2{
+    height: 18px;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    background: linear-gradient(rgb(209, 205, 205), rgba(211, 195, 195, 0.952), rgb(99, 97, 97));
+}
+.Project p{
+    padding: 5px 5px 20px 5px; 
+    text-align: justify;
+    margin: 10px;
+    /* display: block; */
+}
+.Project img{
+    width: 289px;
+}
+.tech-images{
+    padding: 10px ;
+    /* height: 150px;  */
+}
+.tech-images img{
+    width: 45px;
+    height: 45px;
+}
+.Project button{
+    background-color: rgb(108, 126, 108);
+    color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0px 90px;
+}
+#Footer{
+    background: rgb(238, 234, 234);
+    text-align: center;
+    padding: 10px;
+}
+#Footer img {
+	width: 25px;
+    vertical-align: bottom;
+}   
+
+
