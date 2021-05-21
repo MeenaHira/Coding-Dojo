@@ -1,0 +1,15 @@
+.center-box { 
+    width: 600px; 
+    min-height: 275px; 
+    margin: 0px auto; 
+    background-color: rgb(28, 28, 189);
+    display: flex;
+    align-items: center;
+}
+.center-item{
+    background-color: beige;
+    width:100px;
+    height: 100px;
+    margin: 0 auto;
+    /* display: inline-block; */
+} 
