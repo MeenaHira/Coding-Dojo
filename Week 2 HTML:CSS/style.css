@@ -1,0 +1,25 @@
+
+#red{
+    color: red;
+}
+h1{
+    color: purple;
+    display: inline-block;
+}
+p{
+    margin: 50px 15px 50px 20px;
+    background-color: aquamarine;
+    padding: 5px 8px 10px 9px;
+    display: inline-block;
+}
+.goldenrod{
+    background-color: goldenrod;
+}
+div{
+    background-color: darkolivegreen;
+    display: inline-block;
+}
+div p{
+    background-color: goldenrod;
+    color: rgb(20, 20, 3);
+}

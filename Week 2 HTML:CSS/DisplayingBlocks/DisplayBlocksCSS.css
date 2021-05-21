@@ -1,0 +1,35 @@
+div{
+    display: inline-block;
+    vertical-align: auto;
+}
+#container{
+    width: 600px;
+    min-height: 600px;
+    background-color: rgb(209, 206, 160); 
+}
+.header{
+    width: 550px;
+    display: block;
+    padding: 20px 30px 5px 30px;
+}
+h1{
+    display: inline-block;
+}
+
+#main_content{
+    margin: 0 auto;
+	width: 710px;
+	display:inline-block;
+}
+.blue {
+	background-color:  #4685d3;
+	padding:10px 10px 8px 10px;
+	border: 3px solid black;
+	margin:1px;
+}
+.red {
+	background-color: #c43461;
+	padding:10px 10px 8px 10px;
+	border: 2px  black solid;
+	margin:1px;
+}
