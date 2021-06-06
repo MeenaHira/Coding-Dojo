@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+		$('.click').click(function(){
+			$('p').toggle()
+		});
+        $('.hide').click(function(){
+			$(this).hide()
+		});
+        $('.show').click(function(){
+			$(".hide").show()
+        });
+        $('.toggle').click(function(){
+			$("h4").toggle()
+        });
+        $('.slidedown').click(function(){
+			$(".hidden").slideDown("slow")
+		});
+        $('.slideUp').click(function(){
+			$(".h4").slideUp("slow")
+		});
+        $('.slidetoggle').click(function(){
+			$("#slidetoggle").slideToggle()
+		});
+        $('.fadeIn').click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn(1000);
+            $("#div3").fadeIn(5000);
+		});
+        $('.fadeOut').click(function(){
+            $(".div1").fadeOut("slow");
+            $(".div2").fadeOut(2000);
+		});
+        $('.addClass').click(function(){
+			$("#addClass").addClass('blue')
+            $("#box").addClass("green")
+            $("#box").animate({width: "200px"})
+		});
+        $('.before').click(function(){
+			$("#before").before("<h3>Hello World!Look below ..</h3>")
+		});
+        $('.after').click(function(){
+			$("#after").after("<h3>any text in the this p element in html</h3>")
+		});
+        $('.append1').click(function(){
+			$("#append").append("<b>Appended text</b>")
+		});
+        $('.append2').click(function(){
+			$("ol").append("<b>4. Appended List item 4</b>")
+		});
+        $('.html').click(function(){
+			$("#html").html("<h2>I am new p element</h2>")
+		});
+
+    });
+    </script>
+    <style type="text/css">
+		.green{
+			color:rgb(32, 206, 32);
+		}
+        .blue{
+            color:blue;
+        }
+        fieldset {
+        background-color: #cde3e4;
+        }
+        legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+        }
+        button{
+            background-color: #a3c457;
+            margin: 5px;
+            box-shadow: 2px 2px;
+        }
+        h4{
+            color: blue;
+        }
+	</style>
+</head>
+<body>
+    <fieldset>
+		<legend>Click</legend>
+		<h4>Adds a function that occurs when a an element is clicked.</h4>
+        <p>e.g.Click the button to toggle this line</p>
+		<button class="click">Click</button>
+	</fieldset>
+    <fieldset>
+        <legend>Hide</legend>
+        <h4>Hide an element</h4>
+        <button class='hide'>Click the button to hide</button>
+    </fieldset>
+    <fieldset>
+        <legend>Show</legend>
+        <button class='show'>Click and show the previous hide button</button>
+    </fieldset>
+    <fieldset>
+        <legend>Toggle</legend>
+        <h4>I am toggling between hiding and showing</h4>
+        <button class='toggle'>Click to toggle between hiding and showing the above line</button>
+    </fieldset>
+    <fieldset>
+        <legend>SlideDOWN</legend>
+        <p class="hidden" hidden >Hello world!</p>
+		<button class="slidedown">click to slide down and show hidden message </button>
+    </fieldset>
+    <fieldset>
+        <legend>SlideUP</legend>
+        <h4 class='h4'>Slide up to Hide me</h4>
+        <button class="slideUp">Click to slide up and hide above message</button>
+    </fieldset>
+    <fieldset>
+        <legend>SlideTOGGLE</legend>
+        <h4 id='slidetoggle'>Toggles between the slideDown() and slideUp() methods</h4>
+        <button class="slidetoggle">Click to slide DOWN or UP</button>
+    </fieldset>
+    <fieldset>
+        <legend>FadeIN</legend>
+        <h4>Demonstrate fadeIn() with different parameters</h4>
+        <button class="fadeIn">Click to fade in boxes</button>
+        <div id="div1" style="width:100px;height:80px;display:none;background-color:red;"></div>
+        <div id="div2" style="width:200px;height:80px;display:none;background-color:green;"></div>
+        <div id="div3" style="width:400px;height:80px;display:none;background-color:blue;"></div>
+    </fieldset>
+    <fieldset>
+        <legend>FadeOUT</legend>
+        <h4>Demonstrate fadeOut() with different parameters</h4>
+        <button class="fadeOut">Click to fade out below boxes</button>
+        <div class="div1" style="width:80px;height:80px;background-color:red;"></div>
+        <div class="div2" style="width:80px;height:80px;background-color:green;"></div>
+    </fieldset>
+    <fieldset>
+        <legend>AddCLASS</legend>
+        <h4>Adds a class to elements</h4>
+        <p id="addClass">Change this line to blue</p>
+        <div id="box" style="width:170px;height:40px;
+        background-color:rgb(17, 17, 80); margin:6px;">Highlight this line to green and increase width</div>
+        <button class='addClass'>Click to add add classes</button>
+    </fieldset>
+    <fieldset>
+        <legend>Before</legend>
+        <h4>To insert specified content in front of (before) the selected element(s).</h4>
+        <p id='before'>This is Paragraph with p tag in html. You can write anything.</p>
+        <button class='before'>Click to add content before above line</button>
+    </fieldset>
+    <fieldset>
+        <legend>After</legend>
+        <h4>To insert specified content after the selected element(s)</h4>
+        <p id='after'>This is another pragrapraph. You can add... </p>
+        <button class='after'>Click to add content after above line</button>
+    </fieldset>
+    <fieldset>
+        <legend>Append</legend>
+        <h4>Inserts specified content at the end of the selected elements/text in element.To insert content at the beginning of the selected elements. use the prepend() method</h4>
+        <p id='append'>This is a paragraph. </p>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ol>
+        <button class='append1'>Click to append text</button>
+        <button class='append2'>Click to append list item</button>
+    </fieldset>
+    <fieldset>
+        <legend>HTML</legend>
+        <h4>Sets content(overwrites the content of ALL matched elements) or Return content(returns the content of FIRST matched element) the content (innerHTML) of the selected elements.</h4>
+        <p id='html'>Change content of all p elements</p>
+        <div id="html">I am a div<p>I am a p tag within the div</p></div>
+        <button class='html'>Click to change the p element</button>
+        <button class='html'>click to replace the div element with an h1 element</button>
+    </fieldset>
+    <fieldset>
+        <legend>ATTR</legend>
+        <h4></h4>
+        <p></p>
+        <button></button>
+    </fieldset>
+    <fieldset>
+        <legend>VAL</legend>
+        <h4></h4>
+        <p></p>
+        <button></button>
+    </fieldset>
+    <fieldset>
+        <legend>Text</legend>
+        <h4></h4>
+        <p></p>
+        <button></button>
+    </fieldset>
+    
+</body>
+</html>
