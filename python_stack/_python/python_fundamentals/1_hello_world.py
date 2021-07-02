@@ -33,7 +33,7 @@ print(num_list)
 print(new_list, num_list)
 
 #### ----DICTIONARY---- #####
-example 1#
+# example 1#
 prices_lookup = {'apple':2.99, 'oranges':1.99, "milk":5.80}
 print(prices_lookup['apple'])
 
@@ -41,7 +41,7 @@ d = {'k1':123,'k2':[0,1,2],'k3':{'insideKey':100}}
 print(d['k3']['insideKey'])
 print(d['k2'][2])
 
-Dictionary buit-in Methods
+# Dictionary buit-in Methods
 x=("name","age","trick")
 y=("Fido")
 pet_info= dict.fromkeys(x,y)
