@@ -94,7 +94,7 @@ print(b)# Global- first print 500
 def a():
     b = 300
     print(b)# through function-Third print b as 300
-print(b)# Global-second print b as 300
+print(b)# Global-second print b as 500
 a()# funtion a called
 print(b)# Global-fourth print of b as 500 after function a called
 # output--

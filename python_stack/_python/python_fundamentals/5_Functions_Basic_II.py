@@ -59,7 +59,7 @@ print(Values_Greater_than_Second([5,2,3,2,1,4]))
 # 3
 # [5, 3, 4]
 
-# 6. This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value.
+# 5. This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value.
 # Example: length_and_value(4,7) should return [7,7,7,7]
 # Example: length_and_value(6,2) should return [2,2,2,2,2,2]
 def Length_and_Value(size, value):
@@ -75,3 +75,22 @@ print(Length_and_Value(2,4))
 # [7, 7, 7, 7]
 # [2, 2, 2, 2, 2, 2]
 # [4, 4]
+
+# 6. Default Parameters - take a name and a number and print "good morning {some_name}" to the terminal the given number of times. If no name or number is given, the name is blank and the number is 2, respectively.
+def beCheerful(name='', repeat=2):		# set defaults when declaring the parameters
+	print(f"good morning {name}\n" * repeat)
+beCheerful()				    # output: good morning (repeated on 2 lines)
+beCheerful("tim")       		# output: good morning tim (repeated on 2 lines)
+beCheerful(name="john")			# output: good morning john (repeated on 2 lines)
+beCheerful(repeat=6)			# output: good morning (repeated on 6 lines)
+beCheerful("michael",5)	# output: good morning michael (repeated on 5 lines)
+# NOTE: argument order doesn't matter if we are explicit when sending in our arguments!
+beCheerful(repeat=3, name="kb")		# output: good morning kb (repeated on 3 lines)
+
+import random
+def randInt(min= 0  , max= 100  ):   num = random.random()
+print(num) 
+#print(randInt()) 		    # should print a random integer between 0 to 100
+#print(randInt(max=50)) 	    # should print a random integer between 0 to 50
+#print(randInt(min=50)) 	    # should print a random integer between 50 to 100
+#print(randInt(min=50, max=500))    # should print a random integer between 50 and 500
