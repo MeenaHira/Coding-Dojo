@@ -9,8 +9,9 @@
 # 2)
 import random
 def randInt(min=0 , max= 100 ):
-    num= random.random() * max # without max it produces integer between 0.000 to 1.000
-    return round(num) # without rounding of integer it produces float between 0.000 to 100.000
+    num = random.random() * (max-min) + min # without max it produces integer between 0.000 to 1.000
+    return round(num) # without rounding of integer it produces float between 0.000 to 100.000  
+
 print(randInt()) 	# should print a random integer between 0 to 100
 print(randInt(max=50)) 	# should print a random integer between 0 to 50. Will overwrite default parameter max=100 to max=50
 print(randInt(min=50)) 	# should print a random integer between 50 to 100. will overwrite default parameter min=0 to min=50
