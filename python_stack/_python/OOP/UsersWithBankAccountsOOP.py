@@ -67,5 +67,20 @@ emily2.make_deposit(300).make_withdrawal(100).display_user_balance()
 
 tanya.make_withdrawal(100).make_withdrawal(200).yield_interest().display_user_balance()
 
+# ---OUTPUT--
+# User:Emily, Account number:1234, Balance:$100,  Interest Rate: 1%
+# User:Emily, Account number:1234, Balance:$400,  Interest Rate: 1%
+# User:Emily, Account number:1234, Balance:$100,  Interest Rate: 1%
+# User: Emily, Email: emily6@email.com, Account number: 1234
+# Balance: $100
+# User:Emily, Account number:5678, Balance:$300,  Interest Rate: 0.1%
+# User:Emily, Account number:5678, Balance:$200,  Interest Rate: 0.1%
+# User: Emily, Email: emily6@email.com, Account number: 5678
+# Balance: $200
+# User:Tanya, Account number:111, Balance:$1900,  Interest Rate: 1.2%
+# User:Tanya, Account number:111, Balance:$1700,  Interest Rate: 1.2%
+# User: Tanya, Email: tan2@lol.com, Account number: 111
+# Balance: $3740.0
+
 
 
