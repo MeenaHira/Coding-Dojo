@@ -15,7 +15,8 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path, include
-
+# (below)setting up the root url path, calling the urls.py file that we are going to create from our first django app. we are setting up the root path where first django app is really the root and then everything will come under that. Telling that you are going to be using the routes from first django app(below). 
 urlpatterns = [
-    path('', include('first_django_app.urls')), # setting up the root url path, calling the urls.py file that we are going to create from our first django app. we are setting up the root path where first django app is really the root and then everything will come under that. Telling that you are going to be using the routes from first django app. 
+    # path('', include('first_django_app.urls')), 
+    path('', include('time_display_app.urls')),
 ]
