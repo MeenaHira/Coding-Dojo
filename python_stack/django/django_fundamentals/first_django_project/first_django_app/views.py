@@ -16,3 +16,20 @@ def edit(request, number):
 
 def destroy(request, number):
     return redirect('/')
+
+
+def myself(request):
+    context = {
+    "name": "Mina",
+    "favorite_color": "white",
+    "pets": ["Casper", "Junior", "Narda"]
+    }
+    return render(request, "hellodjango.html", context)
+
+#CONTEXT dictionary which hold all variables going to be used in html. any keys you defined in this dictionary going to be variable name that you have in html
+def yourself(request, name):
+    context = {
+        "htmlname":name,
+        "namelist":["Alice","Bob","Charlie","David"]
+    }   
+    return render (request, "welcome.html", context) 
