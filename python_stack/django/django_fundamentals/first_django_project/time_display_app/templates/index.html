@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Display</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/time_display_style.css' %}">
 </head>
 <body>
-    <h4>The current time and date:</h4>
-    <h2>{{time}}</h2>
+    <div id="container">
+        <div class="header">
+            <h4>The current time and date:</h4>
+            
+        </div>
+        <div class="main_content">
+            <h2>{{date}}</h2>
+            <h3>{{time}}</h3>
+        </div>
+        
+    </div>
+    
 </body>
 </html>

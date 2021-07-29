@@ -12,8 +12,8 @@ def index(request):
     return render(request, 'index.html', context)
 
 def date_time (request):
-
     context ={
-        "time": strftime("%b %d, %Y  %I:%M %p", gmtime())
+        "date": strftime("%b %d, %Y", gmtime()),
+        "time": strftime("%I:%M %p", gmtime())
     }
     return render (request, 'index.html', context)
