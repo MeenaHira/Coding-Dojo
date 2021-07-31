@@ -1,0 +1,31 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}    
+#container{
+    width: 800px; 
+    min-height: 600px; 
+    background-color: rgb(241, 241, 233); 
+}
+h1, h2{
+    width: 400px;
+    padding: 5px; 
+    margin: 10px;  
+    background-color: rgb(146, 168, 163); 
+    text-align: center; 
+    /* vertical-align: middle; */
+    border: 2px  rgb(122, 106, 106) solid; 
+}
+.main_content{
+    width: 750px;
+    margin: 15px;
+    background-color: rgb(168, 192, 192);
+    border: 2px  rgb(122, 106, 106) solid; 
+
+}
+p{
+    width: 600px; 
+    padding: 5px; 
+    margin: 5px; 
+    color: rgb(13, 73, 11);
+}

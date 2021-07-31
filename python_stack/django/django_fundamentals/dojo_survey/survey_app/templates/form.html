@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/survey_style.css' %}">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Survey Form</h1>
+        <h2>Fill out the form below: </h2>   
+        <div class="main_content">
+        <form action="/process" method='POST'>
+            {% csrf_token %}
+            <p><label for="name">Your Name:</label>
+            <input type="text" name="name">
+            </p>
+            <p>Select your Gender:</p>
+            <p><input type="radio" name="Gender" value="male" >Male
+            <input type="radio" name="Gender" value="female" >Female
+            <input type="radio" name="Gender" value="other" >Other
+            <input type="radio" name="Gender" value="decline">Prefer not to say
+            </p>
+            <p>
+            <label for="location">Dojo Location:</label>
+            <select name="location">
+                <option value="bellevue">Bellevue, WA </option>
+                <option value="boise">Boise, ID</option>
+                <option value="chicago">Chicago, IL</option>
+                <option value="dallas">Dallas, TX</option>
+                <option value="los angeles">Los Angeles, CA</option>
+                <option value="silicon valley">Silicon Valley, CA</option>
+            </select>
+            </p>
+            <p><label for="languages">Favorite Language:</label>
+            <select name='languages'>
+                <option value="JavaScript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="MySQL">MySQL</option>
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="c">C</option>
+                <option value="c#">C#</option>
+            </select>
+            </p>
+            <p><label for="comment">Comment(optional)</label></p>
+            <textarea name="comment" cols="30" rows="10"></textarea>
+            
+            <p><input type="submit" value='Preview'></p>
+            
+        </form>
+        </div>
+    </div> 
+</body>
+</html>
