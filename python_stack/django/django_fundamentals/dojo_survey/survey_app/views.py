@@ -11,13 +11,14 @@ def process(request):
         print(request.POST)
         context = {
             'name': request.POST['name'],
-            # 'gen': request.POST['Gender'],
+            'gen': request.POST['Gender'],
             'lang':request.POST['languages'],
             'loc':request.POST['location'],
+            'comment':request.POST['comment']
     
         }
         return render(request, "result.html", context)
-    return render(request, "result.html") 
+    # return render(request, "result.html") 
 
 
 def new(request): #have to figure out how to redirect to index through process submit button without this method
