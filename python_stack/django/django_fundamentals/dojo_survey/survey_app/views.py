@@ -15,14 +15,20 @@ def process(request):
             'lang':request.POST['languages'],
             'loc':request.POST['location'],
             'comment':request.POST['comment']
-    
         }
         return render(request, "result.html", context)
-    # return render(request, "result.html") 
-
-
-def new(request): #have to figure out how to redirect to index through process submit button without this method
-    # if request.method == "GET":
-    #     print(request.POST)
+    # return redirect('/')
+    if request.method == "GET":
         return redirect('/')
+    return render(request, "form.html") 
+
+
+def new(request):
+    print('got here from redirect!')
+    return render(request, 'form.html')
+
+# def new(request): #have to figure out how to redirect to index through process submit button without this method
+#     # if request.method == "GET":
+#     #     print(request.POST)
+#         return redirect('/')
     
