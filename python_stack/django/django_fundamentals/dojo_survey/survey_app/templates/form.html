@@ -16,15 +16,15 @@
         <h2>Fill out the form below: </h2>   
         <div class="main_content">
         <form action="/process" method='POST'>
-            {% csrf_token %}
+            {% csrf_token }
             <p><label for="name">Your Name:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
             </p>
-            <p>Select your Gender:</p>
-            <p><input type="radio" name="Gender" value="male" >Male
-            <input type="radio" name="Gender" value="female" >Female
-            <input type="radio" name="Gender" value="other" >Other
-            <input type="radio" name="Gender" value="decline">Prefer not to say
+            <p><label for="Gender">Select your Gender:</label>
+            <input type="radio" name="Gender" value="Male" id ="Gender">Male
+            <input type="radio" name="Gender" value="Female" id ="Gender">Female
+            <input type="radio" name="Gender" value="Other" id ="Gender">Other
+            <input type="radio" name="Gender" value="Prefer not to say" id ="Gender" checked >Prefer not to say
             </p>
             <p>
             <label for="location">Location:</label>
@@ -54,6 +54,7 @@
             <textarea name="comment" cols="30" rows="10"></textarea>
             
             <p><input type="submit" value='Preview'></p>
+            
             
         </form>
         </div>

@@ -3,8 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index),
-    path('process', views.process),
+    path('survey', views.survey),
     path('result',views.result),
-    path('new',views.new),
-    # path('session', views.data),
+    path('flush', views.flush)
 ]

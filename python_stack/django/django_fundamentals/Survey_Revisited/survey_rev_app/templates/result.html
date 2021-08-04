@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Submitted Info</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/heropattern.css' %}">
+    <link rel="stylesheet" href="{% static 'css/survey_style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Submitted Info</h2>
+        <p>Name: {{request.session.name }}</p>
+        <p>Dojo Location: {{request.session.location }}</p>
+        <p>Favorite Language: {{request.session.language }}</p>
+        <p>Comment: {{request.session.comment }}</p>
+        <a href="/" class="btn btn-primary">Go Back</a>
+        <h5>Page Views: {{request.session.pageviews}}</h5>
+        <a href="/flush">Reset page views and go to home page</a>
+        <!-- <p><input type="submit" value='submit'></p> -->
+    </div>
+</body>
+
+</html>
