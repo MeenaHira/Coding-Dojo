@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/word_style.css' %}">
+</head>
+<body>
+    <div id="container">
+        <h1>Random Word: <span>{{request.session.word }}</span></h1>
+        <h2>Guesses: {{request.session.count}}</h2> 
+        <div class='button'>
+        <button onclick="window.location.href='/generate'">Generate new Word</a></button>
+        </div>
+        <div class='button'>
+        <button><a href='/flush'  >Reset</button>
+        <!-- <button onclick="window.location.href='/flush'">Reset</button> -->
+        </div>
+        
+    </div>
+    
+</body>
+</html>

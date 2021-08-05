@@ -7,11 +7,12 @@
     height:auto;
     padding: auto;
     margin: 15px, 50px;
-    background-color: rgb(54, 78, 78);
-    border: 2px  rgb(82, 67, 67) solid; 
+    background-color: rgb(131, 158, 158);
+    border: 2px  rgb(36, 26, 26) solid; 
+    display: inline-block;
 } 
 .nav{
-    background-color: rgb(94, 109, 109);
+    background-color: rgb(85, 167, 167);
     width: 800px;
     height: 175px;
     margin: 0 auto;
@@ -21,7 +22,7 @@
     min-height: 600px; 
     padding: 10px;
     margin: 10px, 50px;
-    background-color: rgb(59, 155, 72); 
+    background-color: rgb(139, 224, 150); 
 }
 h1, h2{
     width: 600px;
